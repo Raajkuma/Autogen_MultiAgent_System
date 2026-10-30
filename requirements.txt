@@ -1,0 +1,6 @@
+autogen-agentchat>=0.7
+autogen-ext[openai,mcp]>=0.7
+autogen-core>=0.7
+mcp>=1.2
+streamlit>=1.40
+pyarrow<17.0.0

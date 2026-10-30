@@ -1,0 +1,207 @@
+{
+  "products": {
+    "P100": {
+      "id": "P100",
+      "name": "AeroBook 14 Laptop",
+      "category": "laptops",
+      "price": 899.0,
+      "stock": 43,
+      "specs": "14in FHD, 16GB RAM, 512GB SSD, 12h battery",
+      "warranty_months": 24,
+      "supplier": {
+        "name": "TechSource Ltd",
+        "lead_time_days": 7,
+        "min_order_qty": 10
+      }
+    },
+    "P200": {
+      "id": "P200",
+      "name": "NovaPhone X",
+      "category": "phones",
+      "price": 649.0,
+      "stock": 0,
+      "specs": "6.5in OLED, 128GB, 5G, dual camera",
+      "warranty_months": 12,
+      "supplier": {
+        "name": "MobiWorld Inc",
+        "lead_time_days": 14,
+        "min_order_qty": 25
+      }
+    },
+    "P300": {
+      "id": "P300",
+      "name": "PulseBuds Pro",
+      "category": "audio",
+      "price": 129.0,
+      "stock": 310,
+      "specs": "ANC, 30h battery with case, Bluetooth 5.3",
+      "warranty_months": 12,
+      "supplier": {
+        "name": "SoundHub Co",
+        "lead_time_days": 5,
+        "min_order_qty": 50
+      }
+    },
+    "P400": {
+      "id": "P400",
+      "name": "ViewMax 27 Monitor",
+      "category": "monitors",
+      "price": 279.0,
+      "stock": 18,
+      "specs": "27in QHD IPS, 144Hz, USB-C 65W",
+      "warranty_months": 36,
+      "supplier": {
+        "name": "TechSource Ltd",
+        "lead_time_days": 10,
+        "min_order_qty": 5
+      }
+    }
+  },
+  "orders": {
+    "ORD-1001": {
+      "id": "ORD-1001",
+      "customer": "Priya",
+      "date": "2026-10-20",
+      "product_id": "P100",
+      "product": "AeroBook 14 Laptop",
+      "price": 899.0,
+      "qty": 1,
+      "total": 899.0,
+      "status": "delivered",
+      "payment_status": "paid",
+      "refund_status": "none",
+      "human_review": "None",
+      "events": [
+        {
+          "ts": "2026-10-30 22:00",
+          "actor": "Shop UI",
+          "text": "Order placed (1 x AeroBook 14 Laptop)"
+        },
+        {
+          "ts": "2026-10-30 22:00",
+          "actor": "Warehouse",
+          "text": "Marked shipped"
+        },
+        {
+          "ts": "2026-10-30 22:00",
+          "actor": "Courier",
+          "text": "Marked delivered"
+        }
+      ]
+    },
+    "ORD-1007": {
+      "id": "ORD-1007",
+      "customer": "Raajkumar",
+      "date": "2026-10-25",
+      "product_id": "P100",
+      "product": "AeroBook 14 Laptop",
+      "price": 899.0,
+      "qty": 1,
+      "total": 899.0,
+      "status": "cancelled",
+      "payment_status": "refunded",
+      "refund_status": "refunded",
+      "human_review": "Approved",
+      "events": [
+        {
+          "ts": "2026-10-30 22:00",
+          "actor": "Shop UI",
+          "text": "Order placed (1 x AeroBook 14 Laptop)"
+        },
+        {
+          "ts": "2026-10-30 22:00",
+          "actor": "Warehouse",
+          "text": "Marked shipped"
+        },
+        {
+          "ts": "2026-10-30 22:06",
+          "actor": "Payment_Agent",
+          "text": "Order cancellation & refund requested (100% Full Refund (Within 30 days)). Human review flag set to Pending. Reason: User requested cancellation on a shipped order."
+        },
+        {
+          "ts": "2026-10-30 22:06",
+          "actor": "Human Reviewer",
+          "text": "Cancellation/Refund APPROVED. Remarks: None. Refund paid out."
+        }
+      ]
+    },
+    "ORD-1008": {
+      "id": "ORD-1008",
+      "customer": "Raajkumar",
+      "date": "2026-09-20",
+      "product_id": "P100",
+      "product": "AeroBook 14 Laptop",
+      "price": 899.0,
+      "qty": 1,
+      "total": 899.0,
+      "status": "delivered",
+      "payment_status": "paid",
+      "refund_status": "none",
+      "human_review": "None",
+      "events": [
+        {
+          "ts": "2026-10-30 22:00",
+          "actor": "Shop UI",
+          "text": "Order placed (1 x AeroBook 14 Laptop)"
+        },
+        {
+          "ts": "2026-10-30 22:00",
+          "actor": "Warehouse",
+          "text": "Marked shipped"
+        },
+        {
+          "ts": "2026-10-30 22:00",
+          "actor": "Courier",
+          "text": "Marked delivered"
+        }
+      ]
+    },
+    "ORD-1009": {
+      "id": "ORD-1009",
+      "customer": "Raajkumar",
+      "date": "2026-10-30",
+      "product_id": "P100",
+      "product": "AeroBook 14 Laptop",
+      "price": 899.0,
+      "qty": 1,
+      "total": 899.0,
+      "status": "cancelled",
+      "payment_status": "refunded",
+      "refund_status": "refunded",
+      "human_review": "Approved",
+      "events": [
+        {
+          "ts": "2026-10-30 22:02",
+          "actor": "Shop UI",
+          "text": "Order placed (1 x AeroBook 14 Laptop)"
+        },
+        {
+          "ts": "2026-10-30 22:03",
+          "actor": "Payment_Agent",
+          "text": "Order cancelled. 100% auto-refund issued and stock restocked."
+        }
+      ]
+    }
+  },
+  "approvals": {},
+  "tickets": {},
+  "sales_history": [],
+  "policies": [
+    {
+      "id": "refund",
+      "title": "Comprehensive Refund & Service Policy",
+      "keywords": "refund return money back defective warranty months days",
+      "text": "1. Within 30 days of delivery: Eligible for 100% full refund.\n2. Within 3 months (30 to 90 days): Eligible for 25% partial refund only.\n3. More than 3 months: No refunds, but active warranty covers doorstep technician assignment."
+    },
+    {
+      "id": "cancel",
+      "title": "Cancellation policy",
+      "keywords": "cancel cancellation stop order",
+      "text": "Orders can be cancelled only before shipment (status 'placed'). Shipped or delivered orders must undergo human review and approval."
+    }
+  ],
+  "it_kb": [],
+  "next_order": 1010,
+  "next_approval": 1,
+  "next_ticket": 1
+}
